@@ -1,0 +1,45 @@
+*{
+    background-color: gainsboro;
+}
+
+#title{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: lawngreen;
+    text-shadow: 0 0 11px  black;
+}
+
+#frame{
+    margin: 90px;
+    padding: 90px;
+    border: 5px inset rgb(153, 163, 137);
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+
+.black{
+    height: 8px;
+    width: 8px;
+    border: solid 1px green;
+    float: left;
+    border-radius: 3px;
+    background-color: grey;
+}
+
+.snake{
+    background-color: black;
+}
+
+#start{
+    margin-left: 150px;
+    height: 30px;
+    width: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: slategrey;
+}
+
+#start:disabled{
+    color: gainsboro;
+}

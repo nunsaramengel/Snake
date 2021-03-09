@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js" defer></script>
+    <title>* * * snake * * *</title>
+</head>
+<body>
+    <h1 id="title">S N A K E</h1>
+    <button id="start">START</button>
+  <div id="frame">
+      <div id="snakeContainer">
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+          <div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+      </div>
+  </div>
+</body>
+</html>
