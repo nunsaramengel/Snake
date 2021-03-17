@@ -1,5 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
 
     var snakeField = document.getElementById("snakeContainer").children;
     var startButton = document.getElementById("start");
