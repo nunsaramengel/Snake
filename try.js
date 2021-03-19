@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    let speed = 400;
+    let speed = 500;
     let move = 3;
     const cF = [].slice.call(document.getElementById('snakeContainer').children);
-
-    let ar = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-
+    let fruit = Math.round(Math.random()*399);
+    console.log(fruit);
+    let ar = [105, 106, 107, 108, 109, 110, 111, 112, 113, 114];
     function mRight(){
         ar.push((ar[ar.length -1]) +1);
         var z = ar.shift();
@@ -39,6 +39,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
      
     function drawSnake(){
+        if(ar[ar.length-1] === fruit){
+            console.log("FRUIT");
+            ar.push(fruit);
+            cF[ar[ar.length-1]].classList.remove("fruit")
+            fruit = Math.round(Math.random()*399);
+            speed -= 100;
+            console.log("SPEED IS " + speed)
+            return ar, speed;
+        } else {cF[fruit].classList.add("fruit");}
         for(let i = 0; i<ar.length; i++){
             cF[ar[i]].classList.add("snake");
         }
@@ -56,11 +65,15 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("right")
         } else if(e.keyCode === 40){
             mDown();
-            move = 4;
         }
+        
     }
 
     window.setInterval(() => {
+
+        
+
+
         drawSnake();
         if(move===1){
             mLeft();
@@ -71,6 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if(move===4){
             mDown();
         }
+
+        
+        
         
     }, speed);
         
